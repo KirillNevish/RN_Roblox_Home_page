@@ -4,6 +4,7 @@
   "main": "expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
+    "web-build": "expo export:web",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web"
@@ -16,7 +17,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@react-native-community/blur": "^4.4.1",
-    "expo": "~51.0.28",
+    "expo": "^50.0.0",
     "expo-blur": "^13.0.2",
     "expo-status-bar": "~1.12.1",
     "react": "18.2.0",
@@ -25,7 +26,8 @@
     "react-native-web": "~0.19.10"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "@expo/webpack-config": "^19.0.1"
   },
   "private": true
 }
