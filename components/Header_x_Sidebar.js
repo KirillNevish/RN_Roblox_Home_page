@@ -277,7 +277,7 @@ export default function HeaderSidebar() {
 
 
             <BlurView
-                style={{ width: 170, height: isSmallScreen ? '92vh' : "96vh", backgroundColor: "black", display: isSmallScreen ? (showSecondBlur ? "flex" : "none") : "flex", flexWrap: "nowrap", flexDirection: "column", top: isSmallScreen ? 80 : 40, position: "absolute", alignItems: "center", zIndex: 999 }}
+                style={{ width: 170, height: isSmallScreen ? '92vh' : "96vh", backgroundColor: "black", display: isSmallScreen ? (showSecondBlur ? "flex" : "none") : "flex", flexWrap: "nowrap", flexDirection: "column", top: isSmallScreen ? 80 : 40, position: "fixed", alignItems: "center", zIndex: 999 }}
                 blurType="dark"  // Options: 'light', 'dark', 'xlight', 'prominent'
                 blurAmount={90}   // Adjust the blur intensity
             >
