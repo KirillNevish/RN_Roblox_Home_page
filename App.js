@@ -99,9 +99,9 @@ export default function App() {
       <HeaderSidebar />
 
       <ScrollView
-        vertical={true}  // Enables horizontal scrolling
+        vertical={false}  // Enables horizontal scrolling
         horizontal={false}
-        showsVerticalScrollIndicator={true}
+        showsVerticalScrollIndicator={false}
         showsHorizontalScrollIndicator={false}
         contentContainerStyle={{ height: "100%", width: "100", }}
       >
@@ -119,7 +119,7 @@ export default function App() {
               <Text style={{ marginLeft: 10, fontSize: 20, fontWeight: 400, color: "white", width: 200, height: 30 }}>Hello, @yourname</Text>
             </View>
 
-            <View style={{ marginTop: 15, display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "baseline" }} >
+            <View style={{ marginTop: 15, display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "baseline", }} >
               <Text style={{ fontSize: 25, fontWeight: 500, color: "white" }}>Friends()</Text>
 
               <Animated.View
@@ -129,7 +129,7 @@ export default function App() {
                 onMouseEnter={handleMouseEnterArrow}
                 onMouseLeave={handleMouseLeaveArrow}
               >
-                <View style={{ borderRadius: 5, display: "flex", flexDirection: "row", alignItems: "center" }}>
+                <View style={{ borderRadius: 5, display: "flex", flexDirection: "row", alignItems: "center", marginRight: isSmallScreen ? 5 : 20 }}>
                   <Text style={{ fontSize: 20, fontWeight: 500, color: "white", marginRight: 7 }}>See all</Text>
                   <FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffff", fontSize: 17 }} />
                 </View>
@@ -222,7 +222,7 @@ export default function App() {
                 onMouseEnter={handleMouseEnterArrow}
                 onMouseLeave={handleMouseLeaveArrow}
               >
-                <View style={{ borderRadius: 5, display: "flex", flexDirection: "row", alignItems: "center" }}>
+                <View style={{ borderRadius: 5, display: "flex", flexDirection: "row", alignItems: "center", marginRight: isSmallScreen ? 5 : 20 }}>
                   <Text style={{ fontSize: 20, fontWeight: 500, color: "white", marginRight: 7 }}>See all</Text>
                   <FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffff", fontSize: 17 }} />
                 </View>
@@ -282,7 +282,7 @@ export default function App() {
                 onMouseEnter={handleMouseEnterArrow}
                 onMouseLeave={handleMouseLeaveArrow}
               >
-                <View style={{ borderRadius: 5, display: "flex", flexDirection: "row", alignItems: "center" }}>
+                <View style={{ borderRadius: 5, display: "flex", flexDirection: "row", alignItems: "center", marginRight: isSmallScreen ? 5 : 20 }}>
                   <Text style={{ fontSize: 20, fontWeight: 500, color: "white", marginRight: 7 }}>See all</Text>
                   <FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffff", fontSize: 17 }} />
                 </View>
